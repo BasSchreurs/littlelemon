@@ -1,0 +1,301 @@
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;   /* default is usually 16px */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;   /* full viewport height */
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+/* Site Header */
+.site-header {
+    background-color: #f5f5f5;
+    padding: 15px 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Logo styling */
+.navbar .logo img {
+    width: 250px;       /* logo size */
+    height: auto;
+    margin-right: 60px;
+}
+
+/* Navigation links */
+.navbar .nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    padding: 8px 12px;
+    transition: 0.3s ease;
+}
+
+.special-offer {
+    background-color: #495E57;
+    color: #F4CE14;
+    padding: 30px;
+    border-radius: 15%;
+    max-width: 900px;
+    margin: 0 auto 10px auto;   /* centers the block */
+}
+
+/* Horizontal layout */
+.special-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Text */
+.special-text {
+    width: 45%;
+    margin-right: 20px;
+}
+
+/* Image */
+.special-image {
+    width: 50%;
+    text-align: right;
+}
+
+.special-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15%;
+}
+
+/* CTA button */
+.special-offer .cta {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 30px;
+    background-color: #F4CE14;
+    color: #495E57;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+.navbar .nav-links a:hover {
+    background-color: #e2d301;
+    border-radius: 5px;
+}
+
+/* Highlights stacked below */
+#highlights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.highlight {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.highlight img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.opening-hours {
+    list-style: none;   /* removes dots */
+    padding: 0;         /* removes left indentation */
+    margin: 20px;
+}
+
+.opening-hours li {
+    margin: 6px 0;
+}
+
+.menu-block {
+    padding: 30px 20px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 30px auto;  /* center horizontally and give top/bottom spacing */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.menu-block h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;  /* center menu titles */
+}
+
+.menu-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;      /* center the list */
+    max-width: 400px;    /* optional: constrain width of menu items */
+}
+
+.menu-block ul li {
+    margin: 8px 0;
+    font-size: 1.1rem;
+    text-align: center;  /* center each menu item */
+}
+
+.menu-block + .menu-block {
+    margin-top: 20px;    /* spacing between different menus */
+}
+
+.about-block {
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    max-width: 1200px;
+    margin: 40px auto;  /* center on page */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;   /* allows responsiveness */
+    gap: 30px;         /* space between text and image */
+    align-items: center;
+}
+
+.about-text {
+    flex: 1 1 500px;   /* grow/shrink with min 500px */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    flex: 1 1 300px;   /* image column */
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.about-image figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+.book-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.book-container h1 {
+    margin-top: 0;
+}
+
+.book-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page-wrapper {
+    flex: 1 0 auto;
+}
+
+/* Footer sticks to bottom */
+.site-footer {
+    flex-shrink: 0;      /* do not shrink */
+    background-color: #333;
+    color: #fff;
+    padding: 6px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* Make the iframe responsive */
+.column .videowrap {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.column .videowrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;    /* fill parent */
+    height: 100%;   /* fill parent */
+    border: 0;
+}
+
+/* === Mobile navbar tweaks === */
+/* === Mobile navbar tweaks (still horizontal) === */
+@media (max-width: 700px) {
+    .navbar {
+        gap: 5px;  /* reduce spacing between logo and links */
+        padding: 5px 10px;
+    }
+
+    .navbar .logo img {
+        width: 80px;  /* smaller logo on mobile */
+        margin-right: 10px;
+    }
+
+    .navbar .nav-links {
+        gap: 5px;          /* reduce space between links */
+    }
+
+    .navbar .nav-links a {
+        font-size: 0.9rem; /* smaller font for links */
+        padding: 5px 8px;  /* reduce padding */
+    }
+}
+
+@media (max-width: 500px) {
+    .column .videowrap {
+        padding-bottom: 70%;  /* taller aspect ratio if needed */
+    }
+}

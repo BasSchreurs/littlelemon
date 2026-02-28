@@ -1,0 +1,16 @@
+{% extends 'restaurant/base.html' %}
+{% load static %}
+
+{% block content %}
+{% for menu in menus %}
+  <div class="menu-block">
+    <h2>{{ menu.title }}</h2>
+    <ul>
+      {% for item in menu.items.all %}
+        <li>{{ item.title }} - ${{ item.price }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endfor %}
+
+{% endblock %}

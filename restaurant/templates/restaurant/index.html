@@ -1,0 +1,63 @@
+{% extends 'restaurant/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="page-container">
+
+<!-- Special Offer Section -->
+<article class="highlight special-offer">
+  <div class="special-inner">
+    <div class="special-text">
+      <h2>SPECIAL OFFER</h2>
+      <p>30% Off This Weekend</p>
+      <a href="{% url 'book' %}" class="cta">Book now</a>
+    </div>
+
+    <div class="special-image">
+      <img src="{% static 'restaurant/img/Waiter.png' %}" alt="Waiter serving">
+    </div>
+  </div>
+</article>
+
+
+
+  <!-- Highlights Section -->
+  <section id="highlights">
+    <article class="highlight">
+      <h2>Our New Menu</h2>
+      <img src="{% static 'restaurant/img/Grill.jpg' %}" alt="Grilled dish" style="width:75%; height:auto;">
+      <p>Our menu consists of 12-15 seasonal items based on Italian, Greek, and Turkish culture.</p>
+      <p>
+  <a href="{% url 'menu' %}" style="color: #000000; text-decoration: underline; font-weight: bold; font-size: 20px;">
+    See our new menu
+  </a>
+</p>
+    </article>
+
+    <article class="highlight">
+      <h2>Book a Table</h2>
+      <img src="{% static 'restaurant/img/restaurant_inside.jpg' %}" alt="Salad dish" style="width:75%; height:auto;">
+      <p>Reserve your table for an Italian, Greek, and Turkish dining experience.</p>
+      <p>
+  <a href="{% url 'book' %}" style="color: #020100; text-decoration: underline; font-weight: bold; font-size: 20px;">
+    Book your table now
+  </a>
+</p>
+    </article>
+
+<article class="highlight">
+  <h2>Opening Hours</h2>
+  <img src="{% static 'restaurant/img/head_chef.jpg' %}" alt="Chef preparing food" style="width:75%; height:auto;">
+  <p>The Little Lemon Restaurant is open 7 days a week, except for public holidays.</p>
+
+  <ul class="opening-hours">
+    <li>Mon - Fri: 14:00 - 22:00</li>
+    <li>Sat: 14:00 - 23:00</li>
+    <li>Sun: 14:00 - 21:00</li>
+  </ul>
+</article>
+
+</section>
+
+</div>
+{% endblock %}

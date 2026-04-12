@@ -13,6 +13,7 @@ services:
 
 volumes:
   littlelemon_static:
+    external: true
 
 networks:
   shared:

@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    expose:
+      - "8001"
+    env_file:
+      - .env
+    restart: always

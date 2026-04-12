@@ -8,8 +8,6 @@ RUN pip install gunicorn
 
 COPY . .
 
-RUN python manage.py collectstatic --noinput
-
 EXPOSE 8001
 
-CMD ["gunicorn", "littlelemon.wsgi:application", "--bind", "0.0.0.0:8001"]
+CMD ["sh", "-c", "python manage.py collectstatic --noinput && gunicorn littlelemon.wsgi:application --bind 0.0.0.0:8001"]

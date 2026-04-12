@@ -131,3 +131,5 @@ REST_FRAMEWORK = {
 }
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+FORCE_SCRIPT_NAME = '/littlelemon'

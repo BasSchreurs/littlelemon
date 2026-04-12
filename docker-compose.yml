@@ -6,3 +6,10 @@ services:
     env_file:
       - .env
     restart: always
+    networks:
+      - shared
+
+networks:
+  shared:
+    external: true
+    name: shared_network

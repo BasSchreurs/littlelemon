@@ -5,9 +5,14 @@ services:
       - "8001"
     env_file:
       - .env
+    volumes:
+      - littlelemon_static:/app/staticfiles
     restart: always
     networks:
       - shared
+
+volumes:
+  littlelemon_static:
 
 networks:
   shared:
